@@ -3,7 +3,7 @@
 <input type="text" name="title" value="${message.title}" />
 </label>
 <br /><br />
-<label>メッセージ<br />
+<label>タスク<br />
 <input type="text"  name="content" value="${message.content}"/>
 </label>
 <br /><br />
