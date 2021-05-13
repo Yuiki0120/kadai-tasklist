@@ -10,20 +10,20 @@
 
 		<p>
 			タスク：
-			<c:out value="${task.content}" />
+			<c:out value="${message.content}" />
 		</p>
 		<p>
 			タイトル：
-			<c:out value="${task.title}" />
+			<c:out value="${message.title}" />
 		</p>
 		<p>
 			作成日時：
-			<fmt:formatDate value="${task.created_at}"
+			<fmt:formatDate value="${message.created_at}"
 				pattern="yyyy-MM-dd HH:mm:ss" />
 		</p>
 		<p>
 			更新日時：
-			<fmt:formatDate value="${task.updated_at}"
+			<fmt:formatDate value="${message.updated_at}"
 				pattern="yyyy-MM-dd HH:mm:ss" />
 		</p>
 
