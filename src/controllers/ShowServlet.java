@@ -33,7 +33,7 @@ public class ShowServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		EntityManager em=DBUtilTask.createEntityManager();
-		Task m=em.find(Task.class, Integer.parseInt(request.getParameter("id")));
+		 Task m=em.find(Task.class, Integer.parseInt(request.getParameter("id")));
 		em.close();
 
 		request.setAttribute("message",m);
